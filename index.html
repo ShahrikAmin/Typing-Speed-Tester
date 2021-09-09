@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TypeFast</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script type="module" src="js/data.js" defer></script>
+		<script type="module" src="js/main.js" defer></script>
+	</head>
+	<body>
+		<div class="top-body">
+			<div class="timer" id="timer">0</div>
+			<button class="start-button">Start!</button>
+			<div class="container">
+				<div class="quote-display" id="quoteDisplay">
+					<span id="wordnr-0"></span>
+					<span id="wordnr-1"></span>
+					<span id="wordnr-2"></span>
+					<span id="wordnr-3"></span>
+					<span id="wordnr-4"></span>
+					<span id="wordnr-5"></span>
+					<span id="wordnr-6"></span>
+					<span id="wordnr-7"></span>
+					<span id="wordnr-8"></span>
+					<span id="wordnr-9"></span>
+					<span id="wordnr-10"></span>
+					<span id="wordnr-11"></span>
+					<span id="wordnr-12"></span>
+					<span id="wordnr-13"></span>
+					<span id="wordnr-14"></span>
+					<span id="wordnr-15"></span>
+					<span id="wordnr-16"></span>
+					<span id="wordnr-17"></span>
+					<span id="wordnr-18"></span>
+					<span id="wordnr-19"></span>
+					<span id="wordnr-20"></span>
+					<span id="wordnr-21"></span>
+					<span id="wordnr-22"></span>
+					<span id="wordnr-23"></span>
+					<span id="wordnr-24"></span>
+					<span id="wordnr-25"></span>
+				</div>
+				<textarea id="quoteInput" class="quote-input" autofocus></textarea>
+			</div>
+		</div>
+		<div class="table-container">
+			<table id="table" class="not-visible">
+				<thead>
+					<th>
+						<h3 id="table-header">Results</h3>
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="center">
+							<strong style="font-size: 2rem; color: #338d2e;" id="WPM"></strong
+							><br />
+							<small>(words per minute)</small>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Keystrokes:</strong>
+							<small id="keystrokes" class="float-right"
+								>(<span class="correct-result"></span> |
+								<span class="incorrect-result"></span>)
+								<span class="correct-result"></span
+							></small>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Correct Words: </strong>
+							<small
+								id="correct-words"
+								class="float-right"
+								style="color: green;"
+							></small>
+						</td>
+					</tr>
+					<tr id="last-row">
+						<td>
+							<strong>Wrong Words: </strong>
+							<small
+								id="incorrect-words"
+								class="float-right"
+								style="color: red;"
+							></small>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
